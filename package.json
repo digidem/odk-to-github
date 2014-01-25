@@ -1,0 +1,19 @@
+{
+  "name": "odk-to-github",
+  "version": "0.0.0",
+  "description": "Writes posts to ODK to a github repository",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/digidem/odk-to-github.git"
+  },
+  "keywords": [
+    "odk",
+    "github"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "github-api": "~0.7.0",
+    "express": "~3.4.8"
+  }
+}

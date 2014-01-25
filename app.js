@@ -26,7 +26,7 @@ app.post('/:user/:repo/:branch', function(req, res) {
     var uuid = data.data.instanceID.replace(/^uuid:/, "");
     var filename = data.formId + "/" + uuid + ".json";
 
-    repo.write(branch, filename, JSON.stringify(data), "Added new form response " + uuid, function(err) { 
+    repo.write(branch, filename, JSON.stringify(data, null, "  "), "Added new form response " + uuid, function(err) { 
         if (err) {
             console.log(err);
         } else {

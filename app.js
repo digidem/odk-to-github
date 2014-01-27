@@ -11,6 +11,7 @@ var github =  new Github({token: github_token, auth: "oauth"});
 // Receive webhook post
 app.post('/:user/:repo/:branch', function(req, res) {
 
+    // For data structure see https://code.google.com/p/opendatakit/wiki/AggregateToJSonXmlREDCapPublishers#Simple_JSON_Publisher
     var data = req.body;
 
     if (data.token !== odk_token) {

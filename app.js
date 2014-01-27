@@ -1,8 +1,8 @@
 var express = require('express');
 var app     = express();
 var Github = require('github-api');
-var odk_token = process.env.ODK_WAPICHANA_TOKEN;
-var github_token = process.env.GITHUB_WAPICHANA_TOKEN;
+var odk_token = process.env.ODK_TOKEN;
+var github_token = process.env.GITHUB_TOKEN;
 
 app.use(express.json());
 

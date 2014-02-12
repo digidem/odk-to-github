@@ -32,5 +32,5 @@ Url to publish to: https://HEROKU_APP_ID.herokuapp.com/GITHUB_USER_NAME/REPO_NAM
 (branch will probably be master)
 Authentication token: THE_TOKEN_YOU_CREATED_ABOVE
 
-That's it. When you submit a new form to ODK, it should appear in your Github repo. Note that Heroku free apps will go into [idle after 60 mins](https://devcenter.heroku.com/articles/dynos#dyno-sleeping) without inactivity. This might cause publishing from ODK to fail - I have not tested this yet.
+That's it. When you submit a new form to ODK, it should appear in your Github repo. Note that Heroku free apps will go into [idle after 60 mins](https://devcenter.heroku.com/articles/dynos#dyno-sleeping) without inactivity. This might cause publishing from ODK to fail - I have not tested this yet. **[EDIT]** ODK Aggregate [will retry](https://code.google.com/p/opendatakit/issues/detail?id=967) JSON submissions, so this *should* be fine with Heroku apps going to sleep.
 
